@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//CSS
+import './index.css';
+
 //Nested Components
 
 function BookList(){
   return (
-    <section>
+    <section className="bookList">
       <Book />
       <Book />
       <Book />
@@ -17,7 +20,7 @@ function BookList(){
 
 const Book = () =>{
   return (
-      <article>
+      <article className='book'>
         <Image />
         <Title />
         <Author />
@@ -27,7 +30,7 @@ const Book = () =>{
 
 const Image = () => <img src='https://images-eu.ssl-images-amazon.com/images/I/91VokXkn8hL._AC_UL200_SR200,200_.jpg' alt='' />
 
-const Title = () => <h2>Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class</h2>
+const Title = () => <h1>Rich Dad Poor Dad</h1>
 
 const Author = () => <h3>Robert T. Kiyosaki</h3>
 
