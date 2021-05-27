@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//JSX Rules
+//return single element
+//div / section / article or fragment
+//use camelCase for html attribute
+//className instead of class
+//close every element
+//formatting
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Greeting(){
+  return <h4>This is Muskan and this is my first component</h4>
+}
+
+ReactDOM.render(<Greeting/>,document.getElementById('root'));
