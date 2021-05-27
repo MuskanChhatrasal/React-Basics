@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//JSX Rules
-//return single element
-//div / section / article or fragment
-//use camelCase for html attribute
-//className instead of class
-//close every element
-//formatting
+//Nested Components
 
 function Greeting(){
-  return <h4>This is Muskan and this is my first component</h4>
+  return (
+    <div>
+      <Person /> 
+       <p>this is my message</p>
+    </div>
+  )
 }
+
+const Person = () => <h2>Muskan</h2>
 
 ReactDOM.render(<Greeting/>,document.getElementById('root'));
