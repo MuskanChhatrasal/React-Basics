@@ -24,6 +24,12 @@ function BookList(){
   )
 }
 
+ //option 2(props - destructring)
+// const Book = ({img,title,author}) =>{
+
+//option 1(props - destructring)
+// const {img,title,author} = props;
+
 const Book = (props) =>{
   return (
       <article className='book'>
