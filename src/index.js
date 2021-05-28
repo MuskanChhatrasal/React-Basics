@@ -32,6 +32,6 @@ const Image = () => <img src='https://images-eu.ssl-images-amazon.com/images/I/9
 
 const Title = () => <h1>Rich Dad Poor Dad</h1>
 
-const Author = () => <h3>Robert T. Kiyosaki</h3>
+const Author = () => <h3 style={{color:'#617d98',fontSize:'0.75rem',marginTop:'0.25rem'}}>Robert T. Kiyosaki</h3>
 
 ReactDOM.render(<BookList/>,document.getElementById('root'));
